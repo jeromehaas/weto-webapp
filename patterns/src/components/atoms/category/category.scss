@@ -1,0 +1,28 @@
+.category {
+  height: 100%;
+  width: 80px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+
+  &--blue { background-color: $blue; }
+  &--red { background-color: $red; }
+  &--orange { background-color: $orange; }
+  &--yellow { background-color: $yellow; }
+  &--green { background-color: $green; }
+  
+  & .category__text {
+    writing-mode: vertical-lr; 
+    transform: rotate(180deg);
+    text-align: center;
+    height: 100%;
+    color: $white;
+    font-size: $medium;
+    text-transform: uppercase;
+  }
+
+}

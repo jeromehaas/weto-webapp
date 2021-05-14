@@ -1,0 +1,45 @@
+{
+  "name": "category", 
+  "status": "wip",
+  "context": {
+    "text": "Category",
+    "color": "blue"
+  }, 
+  "variants": [
+    {
+      "name": "webdevelopment", 
+      "context": {
+        "color": "blue",
+        "text": "webdevelopment"
+      }
+    },
+    {
+      "name": "knowledge", 
+      "context": {
+        "color": "green",
+        "text": "knowledge"
+      }
+    },
+    {
+      "name": "inspiration", 
+      "context": {
+        "color": "orange",
+        "text": "Inspiration"
+      }
+    },
+    {
+      "name": "hosting", 
+      "context": {
+        "color": "yellow",
+        "text": "hosting"
+      }
+    },
+    {
+      "name": "design", 
+      "context": {
+        "color": "red",
+        "text": "design"
+      }
+    }
+  ]
+}
