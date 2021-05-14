@@ -1,0 +1,20 @@
+{
+  "name": "patterns",
+  "version": "1.0.0",
+  "description": "component-libary for weto webapp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jeromehaas",
+  "license": "ISC",
+  "dependencies": {
+    "@frctl/fractal": "^1.5.6",
+    "gulp": "^4.0.2",
+    "gulp-notify": "^4.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sass-glob": "^1.1.0"
+  }
+}
