@@ -18,7 +18,7 @@ $big: 19px;
 @import "../../src/components/**/*.scss";
 
 * {
-  font-size: 30px;
+  font-size: $medium;
   font-family: sans-serif;
   box-sizing: border-box;
   margin: 0;
