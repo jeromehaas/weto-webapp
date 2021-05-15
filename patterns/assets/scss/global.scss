@@ -25,6 +25,26 @@ $big: 19px;
   padding: 0;
 }
 
+body{
+  background-color: #f0f0f0
+}
+
+h1 {
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  line-height: 1.5;
+}
 // .blue { color: $blue }
 // .orange { color: $orange }
 // .green { color: $green }
