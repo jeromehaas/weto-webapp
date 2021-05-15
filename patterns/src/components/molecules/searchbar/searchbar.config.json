@@ -1,0 +1,7 @@
+{
+  "name": "searchbar",
+  "status": "wip",
+  "context": {
+    "placeholder-text": "Search for tool..."
+   }
+}
