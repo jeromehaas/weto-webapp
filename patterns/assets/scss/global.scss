@@ -6,6 +6,7 @@ $red: #DA483B;
 $yellow: #FFC718;
 $white: #ffffff;
 $black: #000000;
+$lightgrey: #BFBFBF;
 $darkgrey: #1E1D1D;
 
 // font characteristics
@@ -28,7 +29,7 @@ $big: 19px;
 }
 
 body{
-  background-color: #f0f0f0
+  background-color: $lightgrey;
 }
 
 h1, h2 {
