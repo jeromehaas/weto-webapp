@@ -87,7 +87,6 @@ table {
     padding-left: 5px; }
 
 .tool {
-  width: 500px;
   height: 200px;
   display: grid;
   grid-template-columns: 80px auto;
@@ -102,6 +101,25 @@ table {
     padding: 30px; }
     .tool .tool__content h2 {
       margin-bottom: 15px; }
+
+.page {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; }
+  .page .page__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px;
+    grid-gap: 20px;
+    padding: 60px;
+    margin-bottom: 60px;
+    height: 100%;
+    max-height: 760px;
+    overflow: scroll; }
+  .page .searchbar {
+    justify-self: flex-end; }
 
 * {
   font-size: 16px;
