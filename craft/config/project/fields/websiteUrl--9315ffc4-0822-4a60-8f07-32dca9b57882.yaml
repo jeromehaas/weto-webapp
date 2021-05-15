@@ -1,0 +1,14 @@
+contentColumnType: string(255)
+fieldGroup: 5ea2dd47-9098-4c73-b961-6019ab766b7d # Tools
+handle: websiteUrl
+instructions: ''
+name: 'Website URL'
+searchable: false
+settings:
+  maxLength: '255'
+  placeholder: null
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

@@ -1,0 +1,11 @@
+enableVersioning: true
+handle: tools
+name: Tools
+propagationMethod: all
+siteSettings:
+  af4633aa-a171-4f4d-bd70-f6acd0d478c5: # WETO
+    enabledByDefault: true
+    hasUrls: true
+    template: tools/_entry
+    uriFormat: 'tools/{slug}'
+type: channel
