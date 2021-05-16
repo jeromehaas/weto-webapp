@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-GB
+name: WETO
+primary: true
+siteGroup: 679966bf-8eb2-43b4-a53a-7c9b0936b669 # WETO
+sortOrder: 1

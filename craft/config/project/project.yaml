@@ -1,0 +1,17 @@
+dateModified: 1621094261
+email:
+  fromEmail: hello@jeromehaas.dev
+  fromName: WETO
+  transportType: craft\mail\transportadapters\Sendmail
+system:
+  edition: solo
+  live: true
+  name: WETO
+  schemaVersion: 3.6.8
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true
