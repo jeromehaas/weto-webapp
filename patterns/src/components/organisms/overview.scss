@@ -1,23 +1,39 @@
 .page {
-  max-width: 1440px; 
   margin: 0 auto;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  
 
   .page__content {
+    padding: 20px;
     display: grid;
-    grid-template-rows: 200px 200px 200px;
-    grid-auto-flow: column;
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
-    padding: 60px;
-    height: 100%;
-    max-height: 760px;
-    overflow: scroll
+    overflow: scroll;
+    margin-bottom: 20px;
   }
 
   .searchbar {
     justify-self: flex-end;
+  }
+
+  @media (max-width: 1400px) {
+    .page__content {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+ 
+  @media (max-width: 1100px) {
+    .page__content {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 750px) {
+    .page__content {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
 }

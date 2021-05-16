@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <title>Welcome to Craft CMS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="referrer" content="origin-when-cross-origin" />
+  <link rel="stylesheet" href="/assets/css/global.css">
+</head>
+<body>
+  <div class="page">
+  
+{% include '_partials/header' %}
+
+    <div class="page__content">
+
+    {% for tool in craft.entries.section('tools').all() %}
+
+    {% switch tool.category %}
+      {% case "development" %}
+        {% set color = 'blue' %}
+      {% case "design" %}
+        {% set color = 'red' %}
+      {% case "hosting" %}
+        {% set color = 'green' %}
+      {% case "inspiration" %}
+        {% set color = 'yellow' %}
+      {% case "knowHow" %}
+        {% set color = 'orange' %}
+      {% default %}
+        {% set color = 'red' %}
+    {% endswitch %}
+      
+    <a class="tool" href="{{ tool.websiteUrl }}">
+      <div class="tool__label">
+        <div class="category category--{{color}}">
+          <p class="category__text">{{ tool.category }}</p>
+          </div>
+        </div>
+      <div class="tool__content">
+        <h2>{{ tool.title }}</h2>
+        <p>{{ tool.description }}</p>
+      </div>
+    </a>
+
+    {% endfor %}
+
+    </div>
+
+    {% include "_partials/searchbar" %}
+   
+  </div>
+</body>
+</html>

@@ -1,5 +1,5 @@
 // colors
-$blue: #4486F4;
+$blue: red;
 $orange: #FF9E0F;
 $green: #1CA45C;
 $red: #DA483B;
@@ -7,7 +7,7 @@ $yellow: #FFC718;
 $white: #ffffff;
 $black: #000000;
 $lightgrey: #BFBFBF;
-$darkgrey: #1E1D1D;
+$darkgrey: green;
 
 // font characteristics
 $bold: 700;
@@ -16,9 +16,8 @@ $small: 13px;
 $medium: 16px;
 $big: 19px;
 
-// import stylesheets
+// import reset stylesheet
 @import "./reset.scss";
-@import "../../src/components/**/*.scss";
 
 * {
   font-size: $medium;
@@ -26,6 +25,12 @@ $big: 19px;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+  -webkit-appearance: none;
 }
 
 body{
@@ -52,8 +57,7 @@ a {
 p {
   line-height: 1.5;
 }
-// .blue { color: $blue }
-// .orange { color: $orange }
-// .green { color: $green }
-// .red { color: $red }
-// .yellow { color: $yellow }
+
+
+// import stylesheets
+@import "../../src/components/**/*.scss";
