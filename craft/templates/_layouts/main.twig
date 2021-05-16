@@ -14,19 +14,42 @@
 {% include '_partials/header' %}
 
     <div class="page__content">
-        <a class="tool" href="#">
-            <div class="tool__label">
-                <div class="category category--blue">
-                    <p class="category__text blue">Webdevelopment</p>
-                </div>
-            </div>
-            <div class="tool__content">
-                <h2>Category</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-        </a>
+
+    {% for tool in craft.entries.section('tools').all() %}
+
+    {% switch tool.category %}
+      {% case "development" %}
+        {% set color = 'blue' %}
+      {% case "design" %}
+        {% set color = 'red' %}
+      {% case "hosting" %}
+        {% set color = 'green' %}
+      {% case "inspiration" %}
+        {% set color = 'yellow' %}
+      {% case "knowHow" %}
+        {% set color = 'orange' %}
+      {% default %}
+        {% set color = 'red' %}
+    {% endswitch %}
+      
+    <a class="tool" href="{{ tool.websiteUrl }}">
+      <div class="tool__label">
+        <div class="category category--{{color}}">
+          <p class="category__text">{{ tool.category }}</p>
+          </div>
+        </div>
+      <div class="tool__content">
+        <h2>{{ tool.title }}</h2>
+        <p>{{ tool.description }}</p>
+      </div>
+    </a>
+
+    {% endfor %}
+
     </div>
+
     {% include "_partials/searchbar" %}
-   </div>
+   
+  </div>
 </body>
 </html>

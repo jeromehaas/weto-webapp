@@ -1,0 +1,78 @@
+contentColumnType: string
+fieldGroup: 5ea2dd47-9098-4c73-b961-6019ab766b7d # Tools
+handle: category
+instructions: ''
+name: Category
+searchable: false
+settings:
+  optgroups: true
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - development
+        -
+          - value
+          - development
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - design
+        -
+          - value
+          - design
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - hosting
+        -
+          - value
+          - hosting
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - inspiration
+        -
+          - value
+          - inspiration
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - know-how
+        -
+          - value
+          - knowHow
+        -
+          - default
+          - ''
+    -
+      __assoc__:
+        -
+          - label
+          - ''
+        -
+          - value
+          - ''
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

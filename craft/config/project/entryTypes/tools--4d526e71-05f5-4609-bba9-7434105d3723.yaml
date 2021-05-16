@@ -27,6 +27,15 @@ fieldLayouts:
             warning: null
             width: 100
           -
+            fieldUid: d6eacbe9-0b66-46c3-9166-542c58d5cb55 # Category
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            warning: null
+            width: 100
+          -
             fieldUid: acdcac34-0ee5-4ac0-b169-460df2eda3c9 # Description
             instructions: null
             label: null
@@ -37,15 +46,6 @@ fieldLayouts:
             width: 100
           -
             fieldUid: 9315ffc4-0822-4a60-8f07-32dca9b57882 # Website URL
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            warning: null
-            width: 100
-          -
-            fieldUid: 928d9f81-9c29-4820-9ba9-01908aa6e117 # Category
             instructions: null
             label: null
             required: false
